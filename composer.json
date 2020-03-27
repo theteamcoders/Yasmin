@@ -1,5 +1,5 @@
 {
-    "name": "charlottedunois/yasmin",
+    "name": "laravel-discord/yasmin",
     "description": "Yasmin is a Discord API library for PHP.",
     "type": "library",
     "license": "Apache-2.0",
