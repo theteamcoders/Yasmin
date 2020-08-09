@@ -171,6 +171,13 @@ class ChannelStorage extends Storage implements \CharlotteDunois\Yasmin\Interfac
                 
                 $channel = new \CharlotteDunois\Yasmin\Models\CategoryChannel($this->client, $guild, $data);
             break;
+            case 5:
+                if($guild === null) {
+                    throw new \CharlotteDunois\Yasmin\DiscordException('Unknown guild for guild channel');
+                }
+                
+                $channel = new \CharlotteDunois\Yasmin\Models\TextChannel($this->client, $guild, $data);
+            break;
             case 6:
                 if($guild === null) {
                     throw new \CharlotteDunois\Yasmin\DiscordException('Unknown guild for guild channel');
